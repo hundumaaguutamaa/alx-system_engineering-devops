@@ -1,22 +1,25 @@
 #!/usr/bin/env bash
 # use case statement.
 
-x=1
-while [ $x -le 20 ]
+i=1
+while [ $i -le 20 ]
 do
-    case $x in
+    case $i in
         4)
-            echo "$x bad luck from China"
+            echo $i
+            echo "bad luck from China"
             ;;
         9)
-            echo "$x bad luck from Japan"
+            echo $i
+            echo "bad luck from Japan"
             ;;
         17)
-            echo "$x bad luck from Italy"
+            echo $i
+            echo "bad luck from Italy"
             ;;
         *)
-            echo $x
+            echo $i
             ;;
     esac
-    x=$((x+1))
+    i=$((i+1))
 done
