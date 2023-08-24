@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# use case statement.
-
-for file in *; do
-    if [[ ! -d $file && $file != .* ]]; then
-        echo "${file#*-}"
-    fi
-done
