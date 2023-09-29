@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script to display current directory in list .
+
+for file in *; do
+    if [[ ! -d $file && $file != .* ]]; then
+        echo "${file#*-}"
+    fi
+done
+
