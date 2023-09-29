@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A bash script that prints the word best school 10 times.
+
+for ((i = 3; i <= 12; i++))
+do
+  echo "Best School"
+done
+
