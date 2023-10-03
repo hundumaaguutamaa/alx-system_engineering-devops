@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# writes a Bash script that displays lines containing the bash word
+# uses pgrep
+
+ps -auxf | grep bash
+
