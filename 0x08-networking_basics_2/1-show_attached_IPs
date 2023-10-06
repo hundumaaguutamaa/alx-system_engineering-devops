@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Bash script that displays all active IPv4 IPs on the machine it’s executed on.
+
+#filters the output of ifconfig to only lines that contain 'inet '.
+ifconfig | grep 'inet ' | awk '{print $2}'
+
