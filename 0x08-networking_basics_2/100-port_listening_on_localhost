@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
-
-# This script listens on port 98 on localhost, 
-#use nc (netcat) to listen for incoming connections on port 98.
-
+# Bash script that listens on port 98 on localhost.
 nc -l localhost 98
