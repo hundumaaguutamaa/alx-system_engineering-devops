@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env rubputs ARGV[0].scan(/(?<=from:|to:|flags:).+?(?=\])/).join(',')
 # This script outputs script should output: [SENDER],[RECEIVER],[FLAGS]
-
-puts message.scan(/(?<=from:|to:|flags:).+?(?=\])/).join(',')
-
+puts ARGV[0].scan(/(?<=from:|to:|flags:).+?(?=\])/).join(',')
