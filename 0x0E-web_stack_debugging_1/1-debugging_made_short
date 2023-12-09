@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# service (init) must say that nginx is not running
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+ssudo service nginx restart
