@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#nginx must be running, and listening on port 80, 
+# all the servers active IPv4 IPs
+
+sudo rm /etc/ngnix/sites-enabled/default
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
