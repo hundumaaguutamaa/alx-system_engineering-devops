@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Install ufw firewall & set requirements.
+sudo apt-get update
 sudo apt install ufw
 # Deny all incoming traffic
 sudo ufw default deny incoming
