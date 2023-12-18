@@ -1,0 +1,11 @@
+sudo apt install ufw
+# Deny all incoming traffic
+sudo ufw default deny incoming
+# Allow outgoing traffic
+sudo ufw default allow outgoing
+# Allow incoming traffic on ports 22, 80, 443
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+# Enable UFW
+sudo ufw enable
