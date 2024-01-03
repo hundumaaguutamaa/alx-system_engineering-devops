@@ -37,4 +37,3 @@ if __name__ == "__main__":
     # Write the JSON data to a file
     with open('todo_all_employees.json', mode='w') as f:
         json.dump(todoAll, f)
-
