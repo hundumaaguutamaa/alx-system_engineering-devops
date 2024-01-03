@@ -21,7 +21,6 @@ if __name__ == "__main__":
     with open(filename, mode='w') as f:
         writer = csv.writer(f, delimiter=',', quotechar='"',
                             quoting=csv.QUOTE_ALL, lineterminator='\n')
-        
         for task in todos.json():
             if task.get('userId') == int(userId):
                 writer.writerow([userId, name, str(task.get('completed')),
