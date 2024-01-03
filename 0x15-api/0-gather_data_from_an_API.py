@@ -8,11 +8,6 @@ if __name__ == "__main__":
     """Define REST API url"""
     restapi_url = "https://jsonplaceholder.typicode.com"
 
-    # Check if the correct number of command-line arguments is provided
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <employee_id>")
-        sys.exit(1)
-
     # Get employee ID from command-line arguments
     employee_id = int(sys.argv[1])
 
@@ -31,6 +26,3 @@ if __name__ == "__main__":
     # Display progress information
     print(f"Employee {user_data['name']} is done with tasks ({completed_task}/{total_task}):")
     print(f"{user_data['name']}:{completed_task}/{total_task}")
-
-
-
