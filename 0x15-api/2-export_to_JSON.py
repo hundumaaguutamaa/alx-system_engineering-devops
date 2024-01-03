@@ -37,4 +37,3 @@ if __name__ == "__main__":
     filename = userId + '.json'
     with open(filename, mode='w') as f:
         json.dump(todoUser, f)
-
